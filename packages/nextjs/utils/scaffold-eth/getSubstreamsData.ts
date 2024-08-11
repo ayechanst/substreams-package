@@ -1,15 +1,23 @@
 import { createConnectTransport } from "@connectrpc/connect-web";
+import * as fs from "node:fs";
 import {
   createAuthInterceptor,
   createRegistry,
   createRequest,
+  createSubstream,
   isEmptyMessage,
   streamBlocks,
   unpackMapOutput,
 } from "@substreams/core";
-import { readPackageFromFile } from "@/helpers/readPackageFromFile";
-import { serializeMessage } from "./serialize";
+// import { readPackageFromFile } from "@/helpers/readPackageFromFile";
+// import { serializeMessage } from "./serialize";
+import { Package } from "@substreams/core/proto";
 //export default async function getData(): Promise<any[]> {
+// function readPackageFromFile(file: string): Package {
+function readPackageFromFile(file: string): Package {
+    const fileContents = fs.readFileSync(file);
+    return createSubstream(fileContents);
+    }
 
 export default async function getData() {
   const token =

@@ -333,6 +333,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@connectrpc/connect-web@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@connectrpc/connect-web@npm:1.4.0"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.4.2
+    "@connectrpc/connect": 1.4.0
+  checksum: bf53f5cdd0be69be1cdebf7d7e01f74936f83b410fb26d7f515284771290e6c24f5701e6144ea600805fa2e39d5255ef009210f7b1c35f1dade60005e231b022
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -14495,6 +14505,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "se-2@workspace:."
   dependencies:
+    "@connectrpc/connect-web": ^1.4.0
     "@substreams/core": ^0.16.0
     husky: ^8.0.1
     lint-staged: ^13.0.3
