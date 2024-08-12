@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import MapPools from "./subgraph/_components/MapPools";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
@@ -63,6 +64,9 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+        {/* substreams part */}
+        <div>Substreams data will be displayed here:</div>
+        {/* <MapPools /> */}
       </div>
     </>
   );

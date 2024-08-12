@@ -270,6 +270,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bufbuild/protobuf@npm:^1.4.2":
+  version: 1.10.0
+  resolution: "@bufbuild/protobuf@npm:1.10.0"
+  checksum: 84ba0bed65ebfc75dcb31d231af4226c87148cc4e333b59979674b187dd3e52b2a8f76431b236195d8cde5ea555bdc1ad38a76f418956f874041c15448f53402
+  languageName: node
+  linkType: hard
+
 "@chainsafe/as-sha256@npm:^0.3.1":
   version: 0.3.1
   resolution: "@chainsafe/as-sha256@npm:0.3.1"
@@ -340,6 +347,15 @@ __metadata:
     "@bufbuild/protobuf": ^1.4.2
     "@connectrpc/connect": 1.4.0
   checksum: bf53f5cdd0be69be1cdebf7d7e01f74936f83b410fb26d7f515284771290e6c24f5701e6144ea600805fa2e39d5255ef009210f7b1c35f1dade60005e231b022
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@connectrpc/connect@npm:1.4.0"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.4.2
+  checksum: 388145ea90b3216f133b34d96a47dfd0273dfa12c4b4963c7223cf45bdcbf8b3490ab234dda34fd42a7112ad9f51f22efc013f3183744a3f2ae65b825917b870
   languageName: node
   linkType: hard
 
@@ -2558,8 +2574,12 @@ __metadata:
   resolution: "@se-2/nextjs@workspace:packages/nextjs"
   dependencies:
     "@apollo/client": ^3.9.4
+    "@bufbuild/protobuf": ^1.4.2
+    "@connectrpc/connect": ^1.4.0
+    "@connectrpc/connect-web": ^1.4.0
     "@heroicons/react": ^2.0.11
     "@rainbow-me/rainbowkit": ^2.0.2
+    "@substreams/core": ^0.16.0
     "@tanstack/react-query": ^5.28.6
     "@trivago/prettier-plugin-sort-imports": ^4.1.1
     "@types/node": ^17.0.35
@@ -14505,8 +14525,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "se-2@workspace:."
   dependencies:
-    "@connectrpc/connect-web": ^1.4.0
-    "@substreams/core": ^0.16.0
     husky: ^8.0.1
     lint-staged: ^13.0.3
   languageName: unknown
